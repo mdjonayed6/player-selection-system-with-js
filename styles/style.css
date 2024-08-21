@@ -80,3 +80,8 @@ body{
     color: #D9ABFF;
     text-align: center;
 }
+.count-container{
+    box-shadow: 0px 0px 5px 1px white;
+    padding: 30px;
+    border: 2px solid #CD40F5;
+}
