@@ -23,9 +23,9 @@ body{
     transition: background 0.3s ease;
 }
 
-.btn:hover {
-    background: linear-gradient(to right, #feb47b, #ff7e5f); /* Reverse colors on hover */
-}
+/* .btn:hover {
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+} */
 .bcb-logo{
     width: 6rem;
     height: 4rem;
@@ -48,4 +48,35 @@ body{
     text-decoration:overline;
     transition-duration: 0.3s;
     color: #CD40F5;
+}
+
+.player-list h2{
+    color: #D9ABFF;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 2rem;
+    text-align: center;
+}
+.player-list h3{
+    color: #D9ABFF;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+.player-list-description{
+    color: #D9ABFF;
+    text-align: center;
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+.cart-details{
+    /* border: 2px solid red; */
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #CD40F5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px white;
+    color: #D9ABFF;
+    text-align: center;
 }
