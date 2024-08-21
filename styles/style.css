@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@200..800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-anton{
+    font-family: "Anton", sans-serif;
+}
+body{
+    background-color: #010313;
+}
+.btn-gradient {
+    background: linear-gradient(to right, #CD40F5, #5856FD); /* Change these colors as needed */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #feb47b, #ff7e5f); /* Reverse colors on hover */
+}
+.bcb-logo{
+    width: 6rem;
+    height: 4rem;
+    border: 2px solid #CD40F5;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px 1px white;
+    margin-left: 50px;
+}
+.bcb-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.bcb-details h2{
+    font-size: 15px;
+    font-weight: bold;
+}
+.menu>li>a:hover{
+    text-decoration:overline;
+    transition-duration: 0.3s;
+    color: #CD40F5;
+}

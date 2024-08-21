@@ -5,10 +5,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bangladesh Cricket Team</title>
+    <!-- Customize CSS  -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Tailwind & DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="py-2 px-16">
 
+    <header>
+        <!-- nav bar section  -->
+        <section>
+            <nav>
+                <div class="navbar text-white">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow font-semibold">
+                                <li><a>Home</a></li>
+                                <li><a>Opportunity</a></li>
+                                <li><a>News</a></li>
+                                <li><a>About BCB</a></li>
+                                <li><a>Women’s Cricket</a></li>
+                            </ul>
+                        </div>
+                        <div class="bcb-details">
+                            <img class="bcb-logo" src="images/icons/bcb.png" alt="">
+                            <h2> Bangladesh <br> Cricket Board</h2>
+                        </div>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 font-semibold">
+                            <li><a>Home</a></li>
+                            <li><a>Opportunity</a></li>
+                            <li><a>News</a></li>
+                            <li><a>About BCB</a></li>
+                            <li><a>Women’s Cricket</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <button class="btn-gradient">LogIn</button>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- Slider / carousel design section here  -->
+        <section>
+            <div class="carousel w-full mt-24">
+                <!-- Slider 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div
+                        class="bg-[linear-gradient(45deg,rgba(0,0,0,1),rgba(0,0,0,0.3)),url(images/1.jpg)] h-[75vh] w-full bg-cover bg-center rounded-lg">
+
+                        <div class="flex flex-col mt-20 ml-8">
+                            <h4 class="text-6xl text-white font-bold">Bangladesh Squad Announced <br> for Tour of
+                                Pakistan 2024</h4>
+                            <p class="text-gray-300 mt-14 w-2/3">The Bangladesh Cricket Board (BCB) announces the squad
+                                for the Tour of Pakistan. <br> The Bangladesh team will leave for Pakistan tomorrow
+                                (Monday, 12 August) for <br> two ICC World Test Championship matches in...</p>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- Slider 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div
+                        class="bg-[linear-gradient(45deg,rgba(0,0,0,1),rgba(0,0,0,0.3)),url(images/2.jpg)] h-[75vh] w-full bg-cover bg-center rounded-lg">
+
+                        <div class="flex flex-col mt-20 ml-8">
+                            <h4 class="text-6xl text-white font-bold">Bangladesh Cricket Board <br> Congratulates
+                                Mr.<br> Asif
+                                Mahmud Sajeeb Bhuiyan</h4>
+                            <p class="text-gray-300 mt-14 w-2/3">The Bangladesh Cricket Board (BCB) extends its
+                                heartfelt congratulations to Asif Mahmud Sajeeb Bhuiyan <br> on his appointment as the
+                                Advisor of the Interim Government responsible for the Ministry of Youth and Sports.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- Slider 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div
+                        class="bg-[linear-gradient(45deg,rgba(0,0,0,1),rgba(0,0,0,0.3)),url(images/4.jpg)] h-[75vh] w-full bg-cover bg-center rounded-lg">
+
+                        <div class="flex flex-col mt-20 ml-8">
+                            <h4 class="text-6xl text-white font-bold">ACC Women’s Asia Cup 2024 | <br> Bangladesh Squad
+                                announced</h4>
+                            <p class="text-gray-300 mt-14 w-2/3">Nigar Sultana Joty (Captain), Nahida Akter (Vice
+                                Captain), Murshida Khatun, Dilara Akter, Jahanara Alam, Rumana Ahmed, Ritu Moni, Marufa
+                                Akter, Shorna Akter, Rabeya Khan, Sultana Khatun, Rubya Haider Jhelik, Shorifa Khatun,
+                                Ishma Tanjim, Sabikun Nahar Jesmin</p>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- Slider 4 -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div
+                        class="bg-[linear-gradient(45deg,rgba(0,0,0,1),rgba(0,0,0,0.3)),url(images/3.jpg)] h-[75vh] w-full bg-cover bg-center rounded-lg">
+
+                        <div class="flex flex-col mt-20 ml-8">
+                            <h4 class="text-6xl text-white font-bold">ICC Men’s T20 World Cup West <br> Indies & USA
+                                2024</h4>
+                            <p class="text-gray-300 mt-14 w-2/3"><strong>Squad:</strong> <br>
+                                Najmul Hossain Shanto ( Captain), Taskin Ahmed (Vice Captain), Litton Kumer Das, Soumya
+                                Sarkar, Tanzid Hasan Tamim, Shakib Al Hasan, Tawhid Hridoy, Mahmud Ullah Riyad, Jaker
+                                Ali Anik, Tanvir Islam, Shak Mahedi Hasan, Rishad Hossain, Mustafizur Rahman, Shoriful
+                                Islam, Tanzim Hasan Sakib.</p>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="script/app.js"></script>
 </body>
 
 </html>
