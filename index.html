@@ -284,12 +284,51 @@
                         $</h3>
                     <hr />
                     <div class="mt-3 items-center justify-between mb-3">
-                        <input id="coupon-code" type="text" placeholder="   Coupon Code" class="w-[80%] h-[43px] rounded">
+                        <input id="coupon-code" type="text" placeholder="   Coupon Code"
+                            class="w-[80%] h-[43px] rounded">
                         <button onclick="updateGrandTotal('apply-btn')" class="btn btn-active">Apply</button>
                     </div>
                     <hr />
                     <h3 class="text-2xl font-semibold text-center mt-3 mb-3">Grand Total: <span
                             id="grand-total">0</span> $</h3>
+
+                    <div class="border-2 p-5 mt-6">
+                        <div>
+                            <h3 class="text-xl mb-3">Team Owner Name :</h3>
+                            <input class="w-full rounded p-2" type="text" name="" id="" placeholder="Your Name Please"
+                                required>
+                        </div>
+                        <div>
+                            <h3 class="text-xl mt-3 mb-3">Phone Number :</h3>
+                            <input class="w-full rounded p-2" type="number" name="" id="" placeholder="Your Number"
+                                required>
+                        </div>
+                        <div>
+                            <h3 class="text-xl mt-3 mb-3">Your Email :</h3>
+                            <input class="w-full rounded p-2" type="text" name="" id="" placeholder="Your Email"
+                                required>
+                        </div>
+                        <div>
+                            <!-- The button to open modal -->
+                            <label for="my_modal_6" class="btn btn-primary w-full mt-6">Next</label>
+                            <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+                            <div class="modal" role="dialog">
+                                <div class="modal-box text-center text-black">
+                                    <div class="flex justify-center">
+                                        <img src="images/success.png" alt="">
+                                    </div>
+                                    <h3 class="text-lg font-bold text-green-600">Success</h3>
+                                    <p class="py-4"><strong>Congratulations!</strong> Your team is ready. Best wishes
+                                        for your team. <br>Shortly you will find a confirmation in your email.</p>
+                                    <div class="modal-action flex justify-center">
+                                        <label for="my_modal_6"
+                                            class="btn bg-green-600 text-white w-[40%]">Continue!</label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

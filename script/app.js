@@ -70,8 +70,8 @@ function updateGrandTotal(status) {
     document.getElementById("grand-total").innerText = totalCost;
   } else {
     const couponCode = document.getElementById("coupon-code").value;
-    if (couponCode == "Freedom2.0") {
-      const discountAmount = totalCost * 0.2;
+    if (couponCode == "Jihad") {
+      const discountAmount = totalCost * 0.2; //20% discount
       document.getElementById("grand-total").innerText =
         totalCost - discountAmount;
     } else {
