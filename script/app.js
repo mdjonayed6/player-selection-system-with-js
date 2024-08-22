@@ -10,6 +10,29 @@ for (const btn of allBtn) {
       "selected-players-container"
     );
 
+    const countDown = getTargetValue("cart");
+    if (countDown + 1 > 6) {
+      alert("Your team is ready. You can't take more");
+      return;
+    }
+    // budget, cart and remaining updated from here
+    const budget = getTargetValue("budget");
+    updateBudget = budget - parseInt(price);
+    document.getElementById("budget").innerText = updateBudget;
+
+    // if (updateBudget > 3000) {
+    //   alert("This Player Price above your budget. Please increase your budget");
+    // }
+
+    // cart update
+    const cartUpdate = getTargetValue("cart");
+    document.getElementById("cart").innerText = cartUpdate + 1;
+
+    // Remaining Players
+    const remainingPlayers = getTargetValue("remaining");
+    document.getElementById("remaining").innerText = remainingPlayers - 1;
+
+    // Create a div with the <p> to keep the player details
     const div = document.createElement("div");
     div.classList.add("flex", "justify-around", "p-2");
 
@@ -39,8 +62,9 @@ function updateTotalCost(value) {
 
 // calculate grand total cost
 function updateGrandTotal(status) {
-  const totalCost = getTargetValue("total-cost");
+  const totalCost = getTargetValue("total-cost"); //grand total calculation here
   if (status == undefined) {
+    //coupon code apply start here
     document.getElementById("grand-total").innerText = totalCost;
   } else {
     const couponCode = document.getElementById("coupon-code").value;
@@ -49,7 +73,7 @@ function updateGrandTotal(status) {
       document.getElementById("grand-total").innerText =
         totalCost - discountAmount;
     } else {
-      console.log("Please Enter Valid Coupon Code");
+      console.log("Please Enter Valid Coupon Code"); // coupon code apply ends here
     }
   }
 }
