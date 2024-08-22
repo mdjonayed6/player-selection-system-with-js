@@ -38,9 +38,20 @@ function updateTotalCost(value) {
 }
 
 // calculate grand total cost
-function updateGrandTotal() {
+function updateGrandTotal(status) {
   const totalCost = getTargetValue("total-cost");
-  document.getElementById("grand-total").innerText = totalCost;
+  if (status == undefined) {
+    document.getElementById("grand-total").innerText = totalCost;
+  } else {
+    const couponCode = document.getElementById("coupon-code").value;
+    if (couponCode == "Freedom2.0") {
+      const discountAmount = totalCost * 0.2;
+      document.getElementById("grand-total").innerText =
+        totalCost - discountAmount;
+    } else {
+      console.log("Please Enter Valid Coupon Code");
+    }
+  }
 }
 
 function getTargetValue(id) {
