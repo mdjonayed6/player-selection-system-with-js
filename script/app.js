@@ -26,6 +26,7 @@ for (const btn of allBtn) {
 
     selectedPlayersContainer.appendChild(div);
     updateTotalCost(price);
+    updateGrandTotal();
   });
 }
 
@@ -34,6 +35,12 @@ function updateTotalCost(value) {
   const totalCost = getTargetValue("total-cost");
   const addPrice = totalCost + parseInt(value);
   document.getElementById("total-cost").innerText = addPrice;
+}
+
+// calculate grand total cost
+function updateGrandTotal() {
+  const totalCost = getTargetValue("total-cost");
+  document.getElementById("grand-total").innerText = totalCost;
 }
 
 function getTargetValue(id) {
