@@ -9,20 +9,22 @@ for (const btn of allBtn) {
     const selectedPlayersContainer = document.getElementById(
       "selected-players-container"
     );
+    // disabled cart
+    e.target.setAttribute("disabled", true);
+    e.target.parentNode.style.backgroundColor = "gray";
 
     const countDown = getTargetValue("cart");
     if (countDown + 1 > 6) {
-      alert("Your team is ready. You can't take more");
+      alert("Your team is ready. You can't take more player");
+      e.target.setAttribute("disabled", false);
+      e.target.parentNode.style.backgroundColor = "#010313";
       return;
     }
+
     // budget, cart and remaining updated from here
     const budget = getTargetValue("budget");
     updateBudget = budget - parseInt(price);
     document.getElementById("budget").innerText = updateBudget;
-
-    // if (updateBudget > 3000) {
-    //   alert("This Player Price above your budget. Please increase your budget");
-    // }
 
     // cart update
     const cartUpdate = getTargetValue("cart");
