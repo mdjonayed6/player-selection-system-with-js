@@ -85,3 +85,8 @@ body{
     padding: 30px;
     border: 2px solid #CD40F5;
 }
+.selected-players{
+    display: flex;
+    justify-content:space-around;
+    padding: 10px;
+}
