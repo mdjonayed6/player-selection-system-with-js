@@ -29,7 +29,7 @@ for (const btn of allBtn) {
 
     if (updateBudget < 0) {
       //over budget
-      alert("over budget");
+      alert("over budget, you can not take this player");
       buttonColor = false;
       //e.target.setAttribute("disabled", buttonColor);
       e.target.parentNode.style.backgroundColor = "#010313";
@@ -83,7 +83,7 @@ function updateGrandTotal(status) {
     document.getElementById("grand-total").innerText = totalCost;
   } else {
     const couponCode = document.getElementById("coupon-code").value;
-    if (couponCode == "Jihad") {
+    if (couponCode == "SEMICOLON20") {
       const discountAmount = totalCost * 0.2; //20% discount
       document.getElementById("grand-total").innerText =
         totalCost - discountAmount;
